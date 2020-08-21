@@ -122,9 +122,9 @@ gsap.timeline({
         
     }
 })
-.from("#wellness_heading",{x: -100, opacity:0,duration:.3})
-.from("#wellness_pragraph",{x:100, opacity:0,duration:.3})
-.from("#wellness_button",{y:100, opacity:0,duration:.3},"+=.5")
+.from("#wellness_heading",{x: -100, opacity:0,duration:.4})
+.from("#wellness_pragraph",{x:100, opacity:0,duration:.4})
+.from("#wellness_button",{y:100, opacity:0,duration:.4},"+=.5")
 
 
 
@@ -137,7 +137,7 @@ gsap.timeline({
         
     }
 })
-.from("#blog_heading",{scale:0.8, opacity:0,duration:.2})
+.from("#blog_heading",{scale:0.8, opacity:0,duration:.4})
 .from("#blog_content",{scale:0.8, opacity:0,duration:.8})
 .from("#blog_button",{y:50, opacity:0,duration:.3})
 
