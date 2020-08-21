@@ -29,7 +29,7 @@ body {
   font-size: 3rem;
   color: #444444;
   font-weight: normal;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   position: relative;
 }
 @media (max-width: 480px) {
@@ -299,18 +299,27 @@ nav .nav-search a {
   height: 15px;
   border-radius: 50%;
   margin: 0.6rem;
+  border: none;
+  box-sizing: border-box;
+  position: relative;
 }
 .header .carousel-indicators li.active {
-  background-color: #016d9e;
-  position: relative;
+  background-color: #2f9f49;
+  z-index: 1;
 }
 .header .carousel-indicators li.active::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: chartreuse;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 150%;
+  height: 150%;
+  padding: 10px;
+  transform: translate(-4px, -4px);
   border-radius: 50%;
+  background: #016c9e69;
   z-index: -1;
 }
 .header .carousel-inner {
@@ -627,10 +636,10 @@ nav .nav-search a {
   padding: 3.8rem 0;
 }
 .section-service .g-pragraph {
-  margin: 4rem 0 2rem;
+  margin: 3rem 0 2rem;
 }
 .section-service .services {
-  margin: 1.5rem;
+  margin: 1rem;
   overflow: hidden;
   border-radius: 5px;
   position: relative;
@@ -709,11 +718,31 @@ nav .nav-search a {
 }
 .section-testimonials .carousel-indicators li {
   background: #016d9e !important;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   box-sizing: border-box;
   border-radius: 50%;
-  margin: 0.8rem 0.3rem;
+  margin: 0.8rem 0.5rem;
+  position: relative;
+  border: none;
+}
+.section-testimonials .carousel-indicators li.active {
+  z-index: 1;
+}
+.section-testimonials .carousel-indicators li.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 160%;
+  height: 160%;
+  padding: 10px;
+  transform: translate(-5px, -5px);
+  border-radius: 50%;
+  background: #016c9e69;
+  z-index: -1;
 }
 .section-testimonials .testimonial {
   margin: 2rem 1rem;

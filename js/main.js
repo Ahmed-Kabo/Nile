@@ -75,7 +75,7 @@ gsap.timeline({
     scrollTrigger:{
         trigger:"#service",
         start:'top center ',
-        end:"+=1200",
+        end:"bottom center",
         
    
 
@@ -84,7 +84,7 @@ gsap.timeline({
 })
 .from("#service_heading",{scale:0.9, opacity:0 ,duration:.5})
 .from("#service_pragraph",{y:100, opacity:0,duration:.5})
-.from("#service_services",{y:100, opacity:0,duration:.5})
+.from("#service_services",{y:100, opacity:0,duration:.8})
 
 
 
@@ -92,7 +92,7 @@ gsap.timeline({
     scrollTrigger:{
         trigger:"#our_team",
         start:'top center ',
-        end:"+=1200", 
+        end:"bottom center",
     }
 })
 .from("#team_content",{scale:0.9, opacity:0,duration:.5},"+=1")
@@ -116,7 +116,7 @@ gsap.timeline({
     scrollTrigger:{
         trigger:"#wellness",
         start:'top center ',
-        end:"bottom top",
+        end:"bottom center",
 
 
         
@@ -124,7 +124,7 @@ gsap.timeline({
 })
 .from("#wellness_heading",{x: -100, opacity:0,duration:.4})
 .from("#wellness_pragraph",{x:100, opacity:0,duration:.4})
-.from("#wellness_button",{y:100, opacity:0,duration:.4},"+=.5")
+.from("#wellness_button",{y:40, opacity:0,duration:.4})
 
 
 
