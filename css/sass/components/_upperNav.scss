@@ -1,0 +1,87 @@
+
+
+
+.upper-nav{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    .row{
+        align-items: center;
+    }  
+    padding: 20px 0;
+
+    .logo{
+        padding: 0;
+        margin: 0;
+    }
+    .phone,
+    .adress{
+        display: flex;
+            
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        @media (max-width:480px){
+            font-size: 0.75rem;
+        }
+        &__icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: $green;
+            background: $light;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            @media (max-width:480px){
+                font-size: 0.8rem;
+                width: 30px;
+                height: 30px;
+            }
+            
+        }
+      
+        &__number{
+            padding: 0;
+            margin: 0 0 0 10px ;
+            .numbers{
+                a{
+                    display: block;
+
+                    color:$gray  ;
+                    &:hover{
+                        text-decoration: none;
+                        color: $blue;
+                        transition: all 0.3s ease-in;
+                    }
+                }
+                
+            }
+        }
+
+        &__data{
+            padding: 0;
+            margin: 0 0 0 10px;
+            .content{
+                display: block;
+                color: $gray ;
+            }
+        }
+
+
+    }
+
+    .phone{
+        @media (max-width: 992px){
+            justify-content: flex-start !important;
+        }
+    }
+    .adress{
+        justify-content: flex-end !important;
+     
+    }
+
+ 
+    
+}

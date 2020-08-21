@@ -1,0 +1,95 @@
+nav{
+    background: $blue;
+    border-radius: 5px;
+    padding: 0 !important;
+    margin: 0;
+    //position: relative;
+    z-index: 20;
+
+    .navbar-toggler{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 40px;
+        outline: 0;
+        border: none;
+        
+
+        
+        .navbar-toggler-icon{
+            background-image: none !important;
+            height: 3px;
+            border-radius: 20px;
+            background: $light;
+            position: relative;
+            transition: all 0.3s ease-out ;
+            &:first-of-type{
+                transform:  translate(0,10px) rotate(-45deg) !important; 
+            }
+            &:nth-child(2){
+                opacity: 0; 
+            }
+            &:last-child{
+                transform:translate(0,-10px) rotate(45deg) !important; 
+            }
+            
+        }
+        &.collapsed{
+            .navbar-toggler-icon{
+                background-image: none !important;
+                height: 3px;
+                border-radius: 20px;
+                background: $light;
+                position: relative;
+                transition: all 0.3s ease-out ;
+
+                &:first-of-type{
+                    transform: rotate(0deg) !important; 
+                }
+                &:nth-child(2){
+                    opacity: 1; 
+                }
+                &:last-child{
+                    transform: rotate(0deg) !important; 
+                }
+    
+            } 
+        }
+    
+    }
+
+
+    .nav-item{
+        transition: all 0.5s ease-in-out;
+        .nav-link{
+            padding: 1rem 1.5rem !important;
+            font-size: 16px;
+            color: $light !important;
+            transition: all 0.5s ease-in-out;
+            text-transform: uppercase;
+
+
+        }
+        
+        &.active{
+            background: $green !important;
+        }
+
+        &:hover{
+            background: $green;
+        }
+    }
+
+    .nav-search
+    {
+        a{
+            padding: 1rem 1.5rem !important;
+            font-size: 16px;
+            color: $light !important;
+           display: block;
+        }
+       
+    }
+
+}
