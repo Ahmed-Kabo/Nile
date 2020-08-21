@@ -92,7 +92,7 @@ gsap.timeline({
     scrollTrigger:{
         trigger:"#our_team",
         start:'top center ',
-        end:"bottom center",
+        end:"bottom top",
     }
 })
 .from("#team_content",{scale:0.9, opacity:0,duration:.5},"+=1")
